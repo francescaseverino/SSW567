@@ -1,2 +1,1 @@
-# SSW567
-Software Testing, Quality Assurance and Maintenance 
+# Software Testing, Quality Assurance and Maintenance 
