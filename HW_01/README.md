@@ -1,0 +1,9 @@
+# Experience
+
+1. While there wasn't much difficulty in coding the assignment, the challenges of the assignment were interpreting the requirements for the program. Though it seems very clear and straightforward, there were certain aspect to the assignment that I had to interpret the vagueness of the requirement statement.
+
+2. I think the requirements specifcation for this assignment clear to an extent. For instance, it was clear that the program needed to labeled of one three categories: equailateral, scalene, and isosceles. Then, determine if the triangle was a right triangle. However, what if the user were to input an invalid triangle. For instance, the sides of a triangle need to be certain requirements, including the sum of any two sides must be greater than the third and no side can be less than one. I needed to assume that the triangle needed to also be a valid triangle, fulfilling the requirements for a general triangle.
+
+3. One of the main challenges I encountered was just importing "unittest" into the program. For some reason, it would not recognize a certain attribute; however, it was resolved. Nonetheless, there were no real challenges with the automated tools.
+
+4. The criteria I used was the requirements specification itself. I wanted to make sure my test cases cover the necessary requirements requested by the program statement. If it print out the correct classification and whether it was a right triangle as well, then I found that the program would work fine. However, I continued testing because of the other elements that needed to be taken into consideration. For instance, I needed to test if the user were to input values for an invalid triangle, resulting in an invalid triangle without a classification. So, once I saw that the tests covered most of the possible faults in the program, I knew that the testing was sufficent enough to stop.
