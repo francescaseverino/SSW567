@@ -41,6 +41,13 @@ class TestTriangles(unittest.TestCase):
     def testInvalidInput_3(self):
         self.assertEqual(classifyTriangle(13.5,14.5,15),'InvalidInput','classifyTriangle(13.5,14.5,15) is a invalid input.')
 
+    # added in part 2
+    def testInvalidInput_4(self):
+        self.assertEqual(classifyTriangle(0,1,1),'InvalidInput','classifyTriangle(0,1,1) is a invalid input.')
+    
+    def testInvalidInput_5(self):
+        self.assertEqual(classifyTriangle(201,150,180),'InvalidInput','classifyTriangle(200,150,180) is a invalid input.')
+
 if __name__ == '__main__':
     print('Running unit tests')
     unittest.main()
