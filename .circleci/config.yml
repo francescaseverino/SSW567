@@ -16,6 +16,18 @@ jobs:
       - store_test_results:
           path: test-results
 
+  build-and-test:
+    docker:
+      - image: cimg/python:3.10.2
+    steps:
+      - checkout
+      - run: 
+          command: |
+            pip install pytest
+            pytest --junitxml=test-results/junit.xml hw-04/TestGitHubAPI.py
+      - store_test_results:
+          path: test-results
+
 workflows:
   testing_triangles:
     jobs:
