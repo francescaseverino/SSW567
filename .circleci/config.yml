@@ -34,4 +34,4 @@ workflows:
       - build-and-test
   testing_github:
     jobs:
-      - GithubTest
+      - GitHubTest
