@@ -16,7 +16,7 @@ jobs:
       - store_test_results:
           path: test-results
 
-  build-and-test:
+  GitHubTest:
     docker:
       - image: cimg/python:3.10.2
     steps:
@@ -32,3 +32,6 @@ workflows:
   testing_triangles:
     jobs:
       - build-and-test
+  testing_github:
+    jobs:
+      - GithubTest
