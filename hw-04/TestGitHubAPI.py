@@ -1,10 +1,13 @@
 import unittest
 
+from unittest import mock
 from GitHubAPI import gitUserInfo
 
 class TestGitHubAPI(unittest.TestCase):
 
-    def testRepoCount(self):
+    @mock.patch('GitHubAPI.gitUserInfo', return_value = ['Repo: Focus-Bot Number of commits: 30', 'Repo: francescaseverino.github.io Number of commits: 2', 'Repo: SSW345 Number of commits: 28'])
+
+    def testRepoCount(self, user):
         repos = len(gitUserInfo('francescaseverino'))
         self.assertEqual(repos, 3, "user has 3 public repos")
 
